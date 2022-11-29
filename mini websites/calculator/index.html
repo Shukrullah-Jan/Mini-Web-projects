@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+       
+    </style>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <div class="calc">
+
+            <input type="text" id="number_area">
+
+            <button class="special__buttons" onclick="clearInput()">C</button>
+            <button class="special__buttons" onclick="changeSign()">+⁄-</button>
+            <button class="special__buttons" onclick="percent()">%</button>
+            <button class="operator__buttons divide">÷</button>
+            <button class="one">1</button>
+            <button class="two">2</button>
+            <button class="three">3</button>
+            <button class="operator__buttons multiply">×</button>
+            <button class="four">4</button>
+            <button class="five">5</button>
+            <button class="six">6</button>
+            <button class="operator__buttons minus">-</button>
+            <button class="seven">7</button>
+            <button class="eight">8</button>
+            <button class="nine">9</button>
+            <button class="operator__buttons plus">+</button>
+            <button class="zero">0</button>
+            <button class="dot">.</button>
+            <button class="operator__buttons equal">=</button>
+
+
+        </div>
+
+        <div class="history">
+            <div class="history_buttons__div">
+                <button class="button__history" onclick="toggleHistory()">Show History</button>
+                <button class="button__clear" onclick="clearHistory()">Clear History</button>
+            </div>
+            <div class="history__container">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="code.js"></script>
+
+</body>
+
+</html>

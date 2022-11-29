@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Inconsolata&display=swap');
+
+
+:root {
+    --transition: all 400ms;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#logo,
+#logo p,
+nav,
+li,
+ul {
+    display: inline;
+    background-color: transparent;
+}
+
+
+header {
+    height: 110px;
+    width: 100%;
+    padding: 0px 80px;
+    background-color: rgb(247, 247, 247);
+}
+
+nav {
+
+    position: relative;
+    top: 20px;
+
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#pages ul li {
+    margin-right: 36px;
+    transition: var(--transition);
+}
+
+#pages ul li:hover {
+    color: rgba(2, 2, 109, 0.863);
+    font-size: 1rem;
+    text-shadow: 0px 0px 30px blue;
+}
+
+#pages {
+    left: 10%;
+
+}
+
+#icons {
+    top: 46px;
+    float: right;
+}
+
+#icons ul li {
+    margin-right: 20px;
+}
+
+main {
+    background: white url("../watch photoes/watch\ 1\ \(16\).jpg") no-repeat top center;
+    background-size: 100vw 110vh;
+    min-height: 100vh;
+}
+
+/* Text Styles*/
+
+#logo p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 4px rgb(126, 171, 255);
+}
+
+#brand {
+    color: rgba(26, 26, 26, 0.87);
+    font-weight: bold;
+}
+
+#watches {
+    color: rgba(230, 19, 19, 1);
+    font-weight: bold;
+}
+
+#pages ul li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    font-weight: 500;
+}
+
+button {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-width: 0;
+
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+img {
+    transition: var(--transition);
+}
+
+
+/* main codes */
+main #description,
+main #new-arrivals {
+    padding: 150px 500px 100px 300px;
+    overflow: hidden;
+}
+
+main #new-arrivals {
+    margin: auto;
+    padding: 75px 200px 0px 300px;
+    overflow: auto;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+main #description {
+    min-height: 100vh;
+}
+
+main #description h1 {
+    font-family: 'Akaya Telivigala';
+    font-size: 4.2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 5px rgb(118, 119, 121);
+}
+
+main #description p {
+
+    font-family: "Segoe UI", arial, monospace;
+    font-size: 0.9rem;
+}
+
+main #new-arrivals h1 {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+
+}
+
+
+#shop-now {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100px;
+    height: fit-content;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: rgb(66, 66, 66);
+    color: rgb(231, 231, 231);
+    text-transform: uppercase;
+    transition: var(--transition), 500ms box-shadow;
+}
+
+#shop-now:hover {
+    transform: scale(1.09);
+    box-shadow: 0px 0px 12px blue;
+}
+
+/* new arrivals codes */
+img {
+    border-radius: 30px;
+    transition: all 400ms;
+}
+
+figure {
+    float: left;
+    margin: 0px 30px 20px 0px;
+    width: 240px;
+    height: 350px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: var(--transition);
+
+}
+
+figure:hover {
+    transform: scale(1.06);
+
+}
+
+figcaption {
+    font-family: Akaya, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.8rem;
+    padding: 5px 6px;
+    color: rgb(78, 78, 78);
+    text-align: center;
+    font-style: italic;
+    width: inherit;
+}
+
+address {
+    font-family: "Segoe UI", monospace;
+    margin-top: 30px;
+    font-size: 1rem;
+
+}
+
+footer {
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 50vh;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 100;
+}
+
+/* ---------- Media Queries ---------------- */
+
+@media screen and (min-width: 992px) {
+
+    header {
+        padding: 0 40px;
+    }
+
+    #pages {
+        left: 9%;
+
+    }
+
+    #pages ul li {
+        margin-right: 20px;
+
+    }
+
+    #icons ul li {
+        margin-right: 20px;
+    }
+
+
+    /* main codes */
+    main #description,
+    main #new-arrivals {
+        padding: 150px 500px 100px 150px;
+        overflow: hidden;
+    }
+
+    main #new-arrivals {
+        padding: 150px 200px 100px 260px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    #pages {
+        left: 5%;
+
+    }
+
+    #pages ul li {
+        margin-right: 16px;
+
+    }
+
+    #icons ul li {
+        margin-right: 10px;
+    }
+
+
+    /* main codes */
+    main #description,
+    main #new-arrivals {
+        padding: 150px 100px 100px 100px;
+
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+
+    header {
+        padding: 0 10px;
+    }
+
+    #icons {
+        display: none;
+    }
+
+    #pages ul li {
+        margin-right: 5px;
+    }
+
+    /* main codes */
+    main #description,
+    main #new-arrivals {
+        padding: 20px 20px 30px 50px;
+        min-height: 70vh;
+
+    }
+
+    main #description h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        background-size: 100% 70vh;
+        padding-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    #pages {
+        display: none;
+
+    }
+
+    #pages ul li {
+        display: block;
+        margin-right: 16px;
+
+    }
+
+    #icons {
+        float: left;
+        display: none;
+    }
+
+    #icons ul li {
+        margin-right: 10px;
+        display: block;
+    }
+
+    main #description h1 {
+        font-size: 2rem;
+
+    }
+
+    /* main codes */
+    main #description,
+    main #new-arrivals {
+        padding: 20px 20px 20px 60px;
+        margin: 0;
+        min-height: 60vh;
+    }
+
+    main {
+        background-size: 100% 60vh;
+        padding-top: 10px;
+    }
+
+}
